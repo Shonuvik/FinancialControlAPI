@@ -1,0 +1,271 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/marlonaraujo/Projects/FinanciallControlAPI/FinancialControl.Tests/FinancialControl.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/marlonaraujo/Projects/FinanciallControlAPI/Application/02-Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/marlonaraujo/Projects/FinanciallControlAPI/Application/02-Application.csproj",
+        "projectName": "02-Application",
+        "projectPath": "/Users/marlonaraujo/Projects/FinanciallControlAPI/Application/02-Application.csproj",
+        "packagesPath": "/Users/marlonaraujo/.nuget/packages/",
+        "outputPath": "/Users/marlonaraujo/Projects/FinanciallControlAPI/Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/marlonaraujo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/marlonaraujo/Projects/FinanciallControlAPI/Domain/04-Domain.csproj": {
+                "projectPath": "/Users/marlonaraujo/Projects/FinanciallControlAPI/Domain/04-Domain.csproj"
+              },
+              "/Users/marlonaraujo/Projects/FinanciallControlAPI/Infrastructure/03-Infrastructure.csproj": {
+                "projectPath": "/Users/marlonaraujo/Projects/FinanciallControlAPI/Infrastructure/03-Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/marlonaraujo/Projects/FinanciallControlAPI/Domain/04-Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/marlonaraujo/Projects/FinanciallControlAPI/Domain/04-Domain.csproj",
+        "projectName": "04-Domain",
+        "projectPath": "/Users/marlonaraujo/Projects/FinanciallControlAPI/Domain/04-Domain.csproj",
+        "packagesPath": "/Users/marlonaraujo/.nuget/packages/",
+        "outputPath": "/Users/marlonaraujo/Projects/FinanciallControlAPI/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/marlonaraujo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/marlonaraujo/Projects/FinanciallControlAPI/FinancialControl.Tests/FinancialControl.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/marlonaraujo/Projects/FinanciallControlAPI/FinancialControl.Tests/FinancialControl.Tests.csproj",
+        "projectName": "FinancialControl.Tests",
+        "projectPath": "/Users/marlonaraujo/Projects/FinanciallControlAPI/FinancialControl.Tests/FinancialControl.Tests.csproj",
+        "packagesPath": "/Users/marlonaraujo/.nuget/packages/",
+        "outputPath": "/Users/marlonaraujo/Projects/FinanciallControlAPI/FinancialControl.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/marlonaraujo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/marlonaraujo/Projects/FinanciallControlAPI/Application/02-Application.csproj": {
+                "projectPath": "/Users/marlonaraujo/Projects/FinanciallControlAPI/Application/02-Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/marlonaraujo/Projects/FinanciallControlAPI/Infrastructure/03-Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/marlonaraujo/Projects/FinanciallControlAPI/Infrastructure/03-Infrastructure.csproj",
+        "projectName": "03-Infrastructure",
+        "projectPath": "/Users/marlonaraujo/Projects/FinanciallControlAPI/Infrastructure/03-Infrastructure.csproj",
+        "packagesPath": "/Users/marlonaraujo/.nuget/packages/",
+        "outputPath": "/Users/marlonaraujo/Projects/FinanciallControlAPI/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/marlonaraujo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/marlonaraujo/Projects/FinanciallControlAPI/Domain/04-Domain.csproj": {
+                "projectPath": "/Users/marlonaraujo/Projects/FinanciallControlAPI/Domain/04-Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

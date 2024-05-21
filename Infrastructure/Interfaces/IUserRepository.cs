@@ -3,7 +3,7 @@ namespace Infrastructure.Interfaces
 {
     public interface IUserRepository
     {
-        Task<long?> GetUserIdByName(string userName);
+        Task<long?> GetUserIdByNameAsync(string userName);
     }
 }
 

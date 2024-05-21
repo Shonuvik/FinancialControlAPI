@@ -1,9 +1,11 @@
 ﻿using Domain.Enums;
 
-namespace Application.DTOs
+namespace Domain.Entities
 {
-    public class FinancialExpenseDto
-    {
+    public class HistoryExpenseEntity : Entity
+	{
+        public CategoryType Category { get; set; }
+
         public decimal Value { get; set; }
 
         public string Description { get; set; }

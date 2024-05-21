@@ -2,8 +2,10 @@
 
 namespace Application.DTOs
 {
-    public class FinancialExpenseDto
-    {
+    public class HistoryExpenseDto
+	{
+        public CategoryType Category { get; set; }
+
         public decimal Value { get; set; }
 
         public string Description { get; set; }

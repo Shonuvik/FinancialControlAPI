@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-Domain", "Domain\04-Doma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Application", "Application\02-Application.csproj", "{F1241802-C65D-4A83-AF55-D68D940C8050}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CE7BA02C-20BA-4410-B407-F2E3E908A6CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Tests", "FinancialControl.Tests\FinancialControl.Tests.csproj", "{02BD95C0-9B02-4BF7-8A73-46ACA1612818}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,11 +37,18 @@ Global
 		{F1241802-C65D-4A83-AF55-D68D940C8050}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1241802-C65D-4A83-AF55-D68D940C8050}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1241802-C65D-4A83-AF55-D68D940C8050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02BD95C0-9B02-4BF7-8A73-46ACA1612818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02BD95C0-9B02-4BF7-8A73-46ACA1612818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02BD95C0-9B02-4BF7-8A73-46ACA1612818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02BD95C0-9B02-4BF7-8A73-46ACA1612818}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0DDA1E78-EA2C-4016-9776-1C320C693572}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{02BD95C0-9B02-4BF7-8A73-46ACA1612818} = {CE7BA02C-20BA-4410-B407-F2E3E908A6CB}
 	EndGlobalSection
 EndGlobal

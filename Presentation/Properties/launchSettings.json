@@ -9,7 +9,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "JWTKey": "jksabdkjhqjxbhjkhlaksjxhkgqohxhkjaslxhjgqiuwhxkhaks_sdjwfkwjhxqjhx",
-        "ConnectionString": "Server=localhost,1433;Database=tempdb;User Id=sa;Password=Admin123;",
+        "ConnectionString": "Server=localhost,1433;Database=master;User Id=sa;Password=Admin123;",
         "SystemName": "financialControlApi"
       },
       "dotnetRunMessages": true
@@ -19,7 +19,10 @@
       "launchBrowser": true,
       "applicationUrl": "http://localhost:42282",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "JWTKey": "jksabdkjhqjxbhjkhlaksjxhkgqohxhkjaslxhjgqiuwhxkhaks_sdjwfkwjhxqjhx",
+        "ConnectionString": "Server=localhost,1433;Database=tempdb;User Id=sa;Password=Admin123;",
+        "SystemName": "financialControlApi"
       }
     }
   }

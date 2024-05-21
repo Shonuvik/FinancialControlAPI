@@ -11,14 +11,9 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.15" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.30" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="Extensions\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Extensions\" />
-  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Infrastructure\03-Infrastructure.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
@@ -26,5 +21,11 @@
     <ProjectReference Include="..\Application\02-Application.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
   </ItemGroup>
 </Project>

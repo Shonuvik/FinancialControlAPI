@@ -14,7 +14,7 @@ namespace Infrastructure.Repositories
             _uow = uow;
         }
 
-        public async Task<long?> GetUserIdByName(string userName)
+        public async Task<long?> GetUserIdByNameAsync(string userName)
         {
             StringBuilder query = new();
 

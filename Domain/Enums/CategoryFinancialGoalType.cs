@@ -5,6 +5,9 @@ namespace Domain.Enums
 {
 	public enum CategoryFinancialGoalType
 	{
+		[Description("Padrao")]
+		Default,
+
 		[Description("Viagem")]
 		Trip,
 
