@@ -45,8 +45,6 @@ namespace Domain.Entities
             if (TargetValue <= 0)
                 throw new ExceptionBusiness("Valor alvo deve ser maior que zero.");
 
-            if (string.IsNullOrEmpty(Description))
-                throw new ExceptionBusiness("Descricao deve ser informada.");
         }
     }
 }

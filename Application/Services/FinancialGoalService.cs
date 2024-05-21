@@ -55,11 +55,10 @@ namespace Application.Services
 
         private List<HistoryGoalDto> Map(List<HistoryGoalEntity> entityList)
         {
-            string message = string.Empty;
             List<HistoryGoalDto> historyList = new();
             foreach (var item in entityList)
             {
-                message = $"Valor Atual: {item.ActualValue} --> Valor Planejado? {item.TargetValue}";
+                string message = $"Valor Atual: {item.ActualValue} --> Valor Planejado: {item.TargetValue}";
                 decimal missingPercentage = (item.ActualValue / item.TargetValue) * 100 - 100;
                 historyList.Add(new HistoryGoalDto
                 {

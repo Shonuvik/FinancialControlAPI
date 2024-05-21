@@ -40,6 +40,27 @@ namespace FinancialControl.Tests.Services
             Assert.True(result);
         }
 
+        [Theory]
+        [InlineData(0, 1, 0)]
+        [InlineData(100, 0, 0)]
+        [InlineData(100, 1, 0)]
+        public void WhenCalled_NewExpenseWithValueLessThan_ShouldThrowException(decimal value, int caseTest, long userId)
+        {
+            var entity = new FinancialExpenseEntity();
+            entity.Value = value;
+            entity.UserId = userId;
+            entity.TransactionDate = caseTest == 1 ? DateTime.Now : default;
+
+            _userRepositoryMock.Setup(x => x.GetUserIdByNameAsync(It.IsAny<string>()))
+                .ReturnsAsync(12);
+
+            _financialControlRepositoryMock.Setup(x => x.AddNewExpenseAsync(entity));
+
+            Assert.ThrowsAsync<Exception>(async () => await _financialControlService.NewExpenseAsync(new FinancialExpenseDto(),
+                                                    It.IsAny<string>(),
+                                                    It.IsAny<CategoryType>()));
+        }
+
         [Fact]
         public void WhenCalled_NewExpenseWithRequestEmpty_ShouldThrowException()
         {

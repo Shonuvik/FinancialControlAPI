@@ -5,6 +5,8 @@ namespace Domain.Entities
 {
     public class FinancialExpenseEntity : Entity
     {
+        public FinancialExpenseEntity() { }
+
         public FinancialExpenseEntity(
             long userId,
             CategoryType categoryType,
