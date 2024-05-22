@@ -18,9 +18,8 @@
     CreatedAt DATETIME 
 );
 
- - # Tabela de Despesas
-
   # =============================================
+ - # Tabela de Despesas
 
 CREATE TABLE [dbo].[FinancialExpense]
 (
@@ -38,7 +37,7 @@ ADD CONSTRAINT FK_UserId FOREIGN KEY (UserId)
 REFERENCES [User] (Id);
 
 # =============================================
-Tabela de Metas
+# Tabela de Metas
 
 CREATE TABLE [dbo].[FinancialGoal]
 (
