@@ -15,6 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CE7BA02C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialControl.Tests", "FinancialControl.Tests\FinancialControl.Tests.csproj", "{02BD95C0-9B02-4BF7-8A73-46ACA1612818}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentacao", "Documentacao", "{5D4016BE-DF90-4A14-9C12-B725F6E0973F}"
+	ProjectSection(SolutionItems) = preProject
+		Tech_Challenge_Fase_4.pdf = Tech_Challenge_Fase_4.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
