@@ -9,8 +9,8 @@
  2 - Após executar a imagem, conecte-se ao banco a partir do azure data studio e, execute os scripts abaixo:
 
  - # Tabela de Usuários
- - 
- CREATE TABLE [dbo].[User] (
+  
+ - CREATE TABLE [dbo].[User] (
     Id int NOT NULL IDENTITY(1,1) PRIMARY KEY,
     Name VARCHAR(256),
     ClientId VARCHAR(256),
@@ -21,7 +21,7 @@
   # =============================================
  - # Tabela de Despesas
 
-CREATE TABLE [dbo].[FinancialExpense]
+- CREATE TABLE [dbo].[FinancialExpense]
 (
     Id int NOT NULL IDENTITY(1,1) PRIMARY KEY,
     UserId int NOT NULL,
@@ -32,14 +32,14 @@ CREATE TABLE [dbo].[FinancialExpense]
     CreatedAt DATETIME
 );
 
-ALTER TABLE [FinancialExpense] 
+- ALTER TABLE [FinancialExpense] 
 ADD CONSTRAINT FK_UserId FOREIGN KEY (UserId)
 REFERENCES [User] (Id);
 
 # =============================================
-# Tabela de Metas
+- # Tabela de Metas
 
-CREATE TABLE [dbo].[FinancialGoal]
+- CREATE TABLE [dbo].[FinancialGoal]
 (
     Id int NOT NULL IDENTITY(1,1) PRIMARY KEY,
     UserId int NOT NULL,
@@ -51,6 +51,6 @@ CREATE TABLE [dbo].[FinancialGoal]
     CreatedAt DATETIME
 );
 
-ALTER TABLE [FinancialGoal]
+- ALTER TABLE [FinancialGoal]
 ADD CONSTRAINT FK_UserId1 FOREIGN KEY (UserId)
 REFERENCES [User] (Id);
